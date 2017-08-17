@@ -37,7 +37,7 @@ html, body {
 }
 
 #jumbotron-text h1, h2 {
-    text-shadow: 0 0 #595959, 0 2px #595959, 2px 0 #595959, 0 0 #595959;
+    text-shadow: 4px 4px 0px #000000;
 }
 
 #jumbotron-text a {
