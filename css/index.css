@@ -12,7 +12,17 @@ html, body {
     color: #f4f4f4;
 }
 
+/* ========================================
+ *                  NAV 
+ * ======================================== */ 
 
+#nav .navbar a {
+    color: white;
+}
+
+#nav .navbar button span {
+    color: white;
+}
 
 /* ========================================
  *                  INTRO 
@@ -28,15 +38,17 @@ html, body {
 #intro h1 {
     font-size: 2.1em;
     margin: 0;
-    animation: fadeInDown ease 1.6s forwards;
-    animation-delay: 1.9s;
+    animation: fadeInDown ease 2s forwards;
+    animation-delay: 2s;
     opacity: 0;
+    transform: rotate(90deg);
+	transform-origin: left top 0;
 }
 
 #intro p.lead {
     font: 1.3em "Montserrat", sans-serif;
     margin: 0;
-    animation: fadeInDown ease 1.6s forwards;
+    animation: fadeInDown ease 2s forwards;
     opacity: 0;
     animation-delay: 1s;
 }
@@ -49,7 +61,7 @@ html, body {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -300%, 0);
+    transform: translate3d(0, -400%, 0);
   }
 
   to {
