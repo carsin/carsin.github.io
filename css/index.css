@@ -30,7 +30,7 @@ html, body {
     align-items: center;
     animation: fadeIn ease 2s forwards;
     opacity: 0;
-    /* animation-delay: 2.5s; */
+    animation-delay: 2.5s;
 }
 
 #nav .nav a {
