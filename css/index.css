@@ -36,6 +36,11 @@ html, body {
     color: white;
 }
 
+#nav .nav a.active {
+    border-bottom: 2px solid #55a023;
+    transition: 0.2s;
+}
+
 /* ========================================
  *                  INTRO 
  * ======================================== */ 
@@ -71,7 +76,7 @@ html, body {
 @keyframes fadeInDown {
   from {
     opacity: 0;
-    transform: translate3d(0, -400%, 0);
+    transform: translate3d(0, -200%, 0);
   }
 
   to {
@@ -79,7 +84,17 @@ html, body {
     transform: none;
   }
 }
+/* Fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 /* Link underline on hover */
 
 a.underline-anim {
