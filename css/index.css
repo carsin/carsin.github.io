@@ -25,31 +25,8 @@ html, body {
  *                  NAV 
  * ======================================== */ 
 
-#nav {
-    position: fixed;
-    height: 100%;
-}
-
-#nav #nav-vert {
-    height: 100%;
-    align-items: center;
-    /* animation-delay: 2.5s; */
-}
-
-#nav #nav-vert a {
-    font-weight: 300;
-    letter-spacing: 2px;
-    color: white;
-    margin: 1vh;
-}
-
-#nav #nav-vert a.hidden {
-    display: none;
-}
-
-#nav #nav-vert a.active {
-    border-bottom: 2px solid #55a023;
-    transition: 0.2s;
+#nav-item-list li {
+    list-style: none;
 }
 
 /* ========================================
