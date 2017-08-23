@@ -9,7 +9,6 @@ html, body {
     padding: 0;
     background-color: #1a1c1e;
     color: #f4f4f4;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     font-weight: 400;
     position: relative;
@@ -52,11 +51,10 @@ html, body {
     opacity: 0;
 }
 
-#intro p.lead {
-    font: 1.3em "Raleway", sans-serif;
+#intro p {
     margin: 0;
-    animation: fadeInDown ease 2s forwards;
     opacity: 0;
+    animation: fadeInDown ease 2s forwards;
     animation-delay: 0.5s;
 }
 
