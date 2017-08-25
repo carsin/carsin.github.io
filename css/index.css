@@ -28,6 +28,15 @@ html, body {
  *                  NAV 
  * ======================================== */ 
 
+#nav {
+    position: fixed;
+    top: 50%
+}
+
+#nav #menu {
+    transform: translate(0, -50%);
+}
+
 #nav-item-list li {
     list-style: none;
 }
