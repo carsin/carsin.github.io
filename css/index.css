@@ -11,7 +11,7 @@
 }
 
 #hero-modal {
-    background: #efe9e3;
+    background: rgba(232, 228, 222, 0.85);
     height: 80%;
     display: flex;
     flex-direction: row;
@@ -20,11 +20,12 @@
     -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
     width: 90%;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 #hero-image {
     background: url(https://static.pexels.com/photos/192136/pexels-photo-192136.jpeg);
+    border-radius: 4px;
     background-size: cover;
     height: 95%;
     margin: 20px;
@@ -32,6 +33,7 @@
 }
 
 #hero-text {
+    color: rgba(0, 0, 0, 0.75);
     font-weight: 100;
     letter-spacing: 2px;
     justify-content: center;
