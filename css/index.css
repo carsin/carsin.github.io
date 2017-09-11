@@ -8,16 +8,15 @@ body, html {
 
 
 #hero {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(https://static.pexels.com/photos/192136/pexels-photo-192136.jpeg); */
-    /* background: #282828; */
-    background: -moz-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(37,37,37,1)), color-stop(51%, rgba(32,32,32,1)), color-stop(100%, rgba(0,0,0,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); /* ie10+ */
-    background: linear-gradient(134deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); /* w3c */
-    /* background-size: cover; */
-    /* background-position: center center; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(https://static.pexels.com/photos/192136/pexels-photo-192136.jpeg);
+    /* background: -moz-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); [> ff3.6+ <] */
+    /* background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(37,37,37,1)), color-stop(51%, rgba(32,32,32,1)), color-stop(100%, rgba(0,0,0,1))); [> safari4+,chrome <] */
+    /* background: -webkit-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); [> safari5.1+,chrome10+ <] */
+    /* background: -o-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); [> opera 11.10+ <] */
+    /* background: -ms-linear-gradient(316deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); [> ie10+ <] */
+    /* background: linear-gradient(134deg, rgba(37,37,37,1) 0%, rgba(32,32,32,1) 51%, rgba(0,0,0,1) 100%); [> w3c <] */
+    background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 100%;
     margin: 0;
