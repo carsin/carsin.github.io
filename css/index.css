@@ -9,6 +9,7 @@ body, html {
 #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(https://static.pexels.com/photos/192136/pexels-photo-192136.jpeg);
     background-position: center center;
+    background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -21,7 +22,6 @@ body, html {
 #hero-modal {
     background: #FBF5F3;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
-    width: 80%;
     height: 70%;
     margin: 0 auto;
     padding: 0;
@@ -46,11 +46,7 @@ body, html {
     background-position: center center;   
 }
 
-@media (max-width: 799px) {
-    #hero-col2 {
-        display: none;
-    }
-}
+@media (max-width: 799px) { #hero-col2 { display: none; } }
 
 #scroll-prompt {
 	text-decoration: none;
@@ -58,11 +54,6 @@ body, html {
     color: rgba(0, 0, 0, 0.75);
 }
 
-#scroll-prompt:hover #scroll-icon {
-    text-decoration: none;
-}
-
-#scroll-icon {
-    font-size: 7vh;
-}
+#scroll-prompt:hover #scroll-icon { text-decoration: none; }
+#scroll-icon { font-size: 7vh; }
 
