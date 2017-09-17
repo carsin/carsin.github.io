@@ -16,7 +16,7 @@ $(document).ready(function() {
         if ($(".mobile-toggle").hasClass("mobile-toggled")) {
             addNavDropdownLinks();
         } else {
-            setTimeout(removeNavDropdownLinks, 500);
+            removeNavDropdownLinks();
         }
 
         // Remove navbar when clicking on a link
@@ -38,7 +38,6 @@ function toggleNavElements() {
 
 // Add links from dropdown menus into regular mobile nav
 function addNavDropdownLinks() {
-    console.log("add");
     $(".nav-dropdown-item ul li").each(function() {
         $(".nav-items").append("<div class='nav-item nav-appended-dropdown'>" + $(this).html() + "</div>");
     });
@@ -46,7 +45,6 @@ function addNavDropdownLinks() {
 
 // Remove Dropdown links from regular mobile nav
 function removeNavDropdownLinks() {
-    console.log("remove");
     $(".nav-appended-dropdown").each(function() {
         $(this).remove();
     });
