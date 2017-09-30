@@ -16,96 +16,14 @@ html, body {
     width: 100%;
     padding: 0;
     margin: 0;
-    font-size: 137.5%;
+    font-size: 1em;
     -webkit-font-smoothing: antialiased;
     color: rgba(20, 20, 20, 0.9);
+    line-height: 1.45;
 }
 
 /* -----------[ 2. Typography ]---------- */
-/* Copy & Lists */
-p {
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-}
-ul,
-ol {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-ul li,
-ol li {
-  line-height: 1.5rem;
-}
-ul ul,
-ol ul,
-ul ol,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-blockquote {
-  line-height: 1.5rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Change heading typefaces here */
-  margin-top: 1.5rem;
-  margin-bottom: 0;
-  line-height: 1.5rem;
-}
-h1 {
-  font-size: 4.242rem;
-  line-height: 4.5rem;
-  margin-top: 3rem;
-}
-h2 {
-  font-size: 2.828rem;
-  line-height: 3rem;
-  margin-top: 3rem;
-}
-h3 {
-  font-size: 1.414rem;
-}
-h4 {
-  font-size: 0.707rem;
-}
-h5 {
-  font-size: 0.4713333333333333rem;
-}
-h6 {
-  font-size: 0.3535rem;
-}
-/* Tables */
-table {
-  margin-top: 1.5rem;
-  border-spacing: 0px;
-  border-collapse: collapse;
-}
-table td,
-table th {
-  padding: 0;
-  line-height: 33px;
-}
-/* Code blocks */
-code {
-  vertical-align: bottom;
-}
-/* Leading paragraph text */
-.lead {
-  font-size: 1.414rem;
-}
-/* Hug the block above you */
-.hug {
-  margin-top: 0;
-}
+
 
 /* -----------[ 3. Elements ]---------- */
 
@@ -284,9 +202,9 @@ body.no-scroll {
 
 .nav .nav-icon {
     user-select: none;
-    margin-top: 0.5vh;
+    margin-top: 0vh;
     z-index: 9999;
-	height: 6vh;
+	height: 6.25vh;
     width: auto;
     transition: 0.2s;
     position: absolute;
@@ -294,6 +212,7 @@ body.no-scroll {
 
 .nav:hover { background: rgba(255, 255, 255, 1); }
 .nav .nav-icon:hover { transform: scale(1.1); transition: 0.2s; }
+.nav-icon-link { display: inline-block; font-size: 30px; }
 .nav .nav-item, .nav .nav-dropdown-item { margin: 0 auto; }
 .nav .nav-item.active a {
     color: #009dff;
