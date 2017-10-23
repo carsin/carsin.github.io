@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Karla');
 
 body, html {
-    font-family: "Source Sans Pro";
+    font-family: "Karla", sans-serif;
 }
 
 /* HERO */
