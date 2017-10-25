@@ -1,7 +1,7 @@
 Full screen layout
 Minimal, yet vibrant
 Border around edge
-Something in middle
+Logo in middle
 Navbar
 Loading screens (?)
 
