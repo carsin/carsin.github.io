@@ -1,5 +1,12 @@
 /* GLOBAL */
 
+.fadeSectionDetector {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -97,6 +104,12 @@ section {
 }
 
 /* ABOUT */
+#about {
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: 1s;
+}
+
 #about-inner {
     display: flex;
     justify-content: center;

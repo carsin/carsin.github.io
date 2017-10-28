@@ -3,13 +3,22 @@ inView(".title-setcolor").on("enter", (el) => {
     console.log("set body background to " + $(el).parent().attr("data-background"));
 });
 
+inView(".fadeSectionDetector").on("enter", (el) => {
+    $(el).parent().parent().parent().parent().css("opacity", "100");
+    $(el).parent().parent().parent().parent().css("transform", "translateX(0)");
+});
+
+inView(".fadeSectionDetector").on("exit", (el) => {
+    $(el).parent().parent().parent().parent().css("opacity", "0");
+    $(el).parent().parent().parent().parent().css("transform", "translateX(-50px)");
+});
+
 inView(".title-main").on("enter", (el) => {
     $("body").css("background", $(el).parent().attr("data-background"));
     console.log("set body background to " + $(el).parent().attr("data-background"));
 });
 
 $(window).scroll(() => {
-    console.log($(document).scrollTop());
     if ($(document).scrollTop() >= 100) {
         $("#hero-bottom").css("opacity", 0);
     } else {
