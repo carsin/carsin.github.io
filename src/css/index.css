@@ -1,56 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 
 body, html {
-    font-family: "Karla", sans-serif;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: .5s ease-in-out;
+    background-color: #f25f5c;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 /* HERO */
 
 #hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://static.pexels.com/photos/584873/pexels-photo-584873.jpeg");
-    background-position: center center;
-	background-size: 100% 100%;
-	background-repeat: none;
-    width: 100%;
+    font-family: "Work Sans", sans-serif;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-	letter-spacing: 3px;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+
+    /* white border */
+    /* border-top: 2vh solid white; */
+    /* border-bottom: 2vh solid white; */
+    /* border-right: 1vw solid white; */
+    /* border-left: 1vw solid white; */
 }
 
-#hero-modal {
-    background: #FBF5F3;
-	border-radius: 0;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
-	background-color: rgba(255, 255, 255, 0.85);
-    width: 50%;
-    height: 35%;
-    margin: 0 auto;
-    padding: 0;
-}
-
-#hero-text {
+#hero-inner {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100%;
-    color: rgba(0, 0, 0, 0.75);
-    text-align: center;
-}
-
-#scroll-prompt {
-	text-decoration: none;
-    font-size: 3vh;
-    color: rgba(0, 0, 0, 0.75);
-}
-
-#scroll-prompt:hover #scroll-icon {
-    text-decoration: none;
-}
-
-#scroll-icon {
-    font-size: 7vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
