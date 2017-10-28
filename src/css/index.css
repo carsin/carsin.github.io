@@ -39,6 +39,7 @@ body {
 section {
     height: 100%;
     position: relative;
+    text-align: center;
 }
 
 /* HERO */
@@ -54,7 +55,7 @@ section {
     text-transform: lowercase;
     font-weight: 100;
     letter-spacing: 4px;
-    line-height: 40px;
+    line-height: 50px;
 }
 
 #hero .sub-title {
@@ -103,6 +104,17 @@ section {
     height: 100%;
 }
 
+#about a {
+    color: #147FCC;
+    transition: 0.2s;
+}
+
+#about a:hover {
+    color: #024c82;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
 /* ANIMATIONS */
 @keyframes bobUpDown {
     0% {
@@ -116,4 +128,36 @@ section {
     100% {
         bottom: 20px;
     }
+}
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #2bddb3;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
 }

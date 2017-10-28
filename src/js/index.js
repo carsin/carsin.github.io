@@ -1,4 +1,4 @@
-inView(".title").on("enter", (el) => {
+inView(".title-setcolor").on("enter", (el) => {
     $("body").css("background", $(el).parent().attr("data-background"));
     console.log("set body background to " + $(el).parent().attr("data-background"));
 });
