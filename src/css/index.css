@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 
 body, html {
-    font-family: "Roboto", sans-serif;
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
     transition: .5s ease-in-out;
     background-color: #f25f5c;
     color: rgba(0, 0, 0, 0.8);
@@ -14,18 +14,25 @@ body, html {
 /* HERO */
 
 #hero {
-    font-family: "Work Sans", sans-serif;
     height: 100%;
-    font-size: 60px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 900;
 
     /* white border */
     /* border-top: 2vh solid white; */
     /* border-bottom: 2vh solid white; */
     /* border-right: 1vw solid white; */
     /* border-left: 1vw solid white; */
+}
+
+#hero .title {
+    font-family: "Work Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 40px;
+}
+
+#hero .sub-title {
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 #hero-inner {
