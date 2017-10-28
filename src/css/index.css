@@ -34,7 +34,6 @@ section {
 }
 
 /* HERO */
-
 #hero {
     /* white border */
     /* border-top: 2vh solid white; */
@@ -58,6 +57,7 @@ section {
     letter-spacing: 1px;
     font-family: "Work Sans", sans-serif;;
 }
+
 #hero-inner {
     display: flex;
     height: 100%;
@@ -71,7 +71,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     transition: 0.4s;
-    font-size: 17px;
+    font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 100;
@@ -88,7 +88,6 @@ section {
 }
 
 /* ABOUT */
-
 #about-inner {
     display: flex;
     justify-content: center;
@@ -96,6 +95,7 @@ section {
     height: 100%;
 }
 
+/* ANIMATIONS */
 @keyframes bobUpDown {
     0% {
         bottom: 20px;
