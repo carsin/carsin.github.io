@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karla');
+/* GLOBAL */
 
 body, html {
     height: 100%;
@@ -7,15 +7,35 @@ body, html {
     padding: 0;
     font-family: "Roboto", sans-serif;
     transition: .5s ease-in-out;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+body {
     background-color: #f25f5c;
-    color: rgba(0, 0, 0, 0.8);
+}
+
+.x-divider {
+    font-size: 35px;
+    color: black;
+    font-family: "Source Sans Pro", sans-serif;;
+}
+
+.title {
+    color: black;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "Work Sans", sans-serif;
+}
+
+section {
+    height: 100%;
+    position: relative;
 }
 
 /* HERO */
 
 #hero {
-    height: 100%;
-
     /* white border */
     /* border-top: 2vh solid white; */
     /* border-bottom: 2vh solid white; */
@@ -23,22 +43,41 @@ body, html {
     /* border-left: 1vw solid white; */
 }
 
-#hero .title {
-    font-family: "Work Sans", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+#hero .title-main {
+    text-transform: lowercase;
+    font-weight: 100;
+    letter-spacing: 4px;
     line-height: 40px;
 }
 
 #hero .sub-title {
-    font-family: "Roboto", sans-serif;
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.80);
+    font-weight: 100;
+    text-transform: lowercase;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-family: "Work Sans";
 }
-
 #hero-inner {
     display: flex;
     height: 100%;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+}
+
+#hero-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.8s;
+}
+
+/* ABOUT */
+
+#about-inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
 }
