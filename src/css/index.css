@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 
 body, html {
-    font-family: "Source Sans Pro";
+    font-family: "Karla", sans-serif;
 }
 
 /* HERO */
@@ -23,16 +23,16 @@ body, html {
 
 #hero-modal {
     background: #FBF5F3;
-	border-radius: 15px;
+	border-radius: 0;
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.4);
 	background-color: rgba(255, 255, 255, 0.85);
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: 35%;
     margin: 0 auto;
     padding: 0;
 }
 
-#hero-col1 {
+#hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
