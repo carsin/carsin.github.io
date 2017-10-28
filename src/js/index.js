@@ -10,7 +10,7 @@ inView(".title-main").on("enter", (el) => {
 
 $(window).scroll(() => {
     console.log($(document).scrollTop());
-    if ($(document).scrollTop() !== 0) {
+    if ($(document).scrollTop() >= 100) {
         $("#hero-bottom").css("opacity", 0);
     } else {
         $("#hero-bottom").css("opacity", 100);

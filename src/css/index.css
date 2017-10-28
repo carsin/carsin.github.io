@@ -11,7 +11,7 @@ body, html {
 }
 
 body {
-    background-color: #f25f5c;
+    background-color: white;
 }
 
 .x-divider {
@@ -56,7 +56,7 @@ section {
     text-transform: lowercase;
     line-height: 25px;
     letter-spacing: 1px;
-    font-family: "Work Sans";
+    font-family: "Work Sans", sans-serif;;
 }
 #hero-inner {
     display: flex;
@@ -70,7 +70,21 @@ section {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: 0.8s;
+    transition: 0.4s;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: "Work Sans", sans-serif;;
+    line-height: 0;
+}
+
+#hero-bottom i {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    animation: bobUpDown 2s ease-in-out infinite;
+    position: absolute;
 }
 
 /* ABOUT */
@@ -80,4 +94,18 @@ section {
     justify-content: center;
     flex-direction: column;
     height: 100%;
+}
+
+@keyframes bobUpDown {
+    0% {
+        bottom: 20px;
+    }
+
+    50% {
+        bottom: 50px;
+    }
+
+    100% {
+        bottom: 20px;
+    }
 }
