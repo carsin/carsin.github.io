@@ -10,7 +10,7 @@ inView(".fadeSectionDetector").on("enter", (el) => {
 
 inView(".fadeSectionDetector").on("exit", (el) => {
     $(el).parent().parent().parent().parent().css("opacity", "0");
-    $(el).parent().parent().parent().parent().css("transform", "translateX(-50px)");
+    $(el).parent().parent().parent().parent().css("transform", "translateX(-10vw)");
 });
 
 inView(".title-main").on("enter", (el) => {
@@ -23,6 +23,12 @@ $(window).scroll(() => {
         $("#hero-bottom").css("opacity", 0);
     } else {
         $("#hero-bottom").css("opacity", 100);
+    }
+
+    if ($(document).scrollTop() >= 320) {
+        $("#hero-text").css("opacity", 0);
+    } else {
+        $("#hero-text").css("opacity", 100);
     }
 });
 
