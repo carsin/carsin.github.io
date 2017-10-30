@@ -56,10 +56,15 @@ section {
 
 @media (max-width: 768px) {
     .nav-item {
-        border-bottom: 1px solid #c9c9c9;
+        border-bottom: 1px solid #909090;
         margin: 3vh 0;
         padding: 0 2vh;
     }
+
+    .navbar-nav {
+        height: 100vh;
+    }
+
 }
 
 .navbar-brand .quote {

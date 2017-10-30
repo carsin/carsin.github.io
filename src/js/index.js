@@ -25,12 +25,18 @@ $(".navbar-toggler").click(() => {
     setTimeout(() => {
         if ($(".navbar-toggler").hasClass("collapsed")) {
             $("#nav-main").css("background", "rgba(0, 0, 0, 0)");
+            $(".navbar-brand").css("color", "black");
+            $(".nav-item").css("color", "black");
+            $(".navbar-toggler-icon").css("color", "black");
         } else {
             // Set nav color to background
             // $("#nav-main").css("background", $("body").css("background-color"));
 
-            // Set nav color to white
-            $("#nav-main").css("background", "white");
+            // Set nav color to black on toggle
+            $("#nav-main").css("background", "black");
+            $(".navbar-brand").css("color", "white");
+            $(".nav-item").css("color", "white");
+            $(".navbar-toggler-icon").css("color", "white");
         }
     }, 1);
 });
