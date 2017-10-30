@@ -62,4 +62,10 @@ $(".nav-link").click(function(e) {
     e.preventDefault();
 });
 
-console.log("js load success");
+$(".smooth-scroll").click(function(e) {
+    var href = $(this).attr("href");
+    $('html, body').stop().animate({
+        scrollTop: $(href).offset().top - $("#nav-main").height()
+    }, 300);
+    e.preventDefault();
+});
