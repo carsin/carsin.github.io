@@ -21,6 +21,20 @@ inView(".title-scrollspy").on("enter", (el) => {
     }
 });
 
+$(".navbar-toggler").click(() => {
+    setTimeout(() => {
+        if ($(".navbar-toggler").hasClass("collapsed")) {
+            $("#nav-main").css("background", "rgba(0, 0, 0, 0)");
+        } else {
+            // Set nav color to background
+            // $("#nav-main").css("background", $("body").css("background-color"));
+
+            // Set nav color to white
+            $("#nav-main").css("background", "white");
+        }
+    }, 1);
+});
+
 inView(".title-main").on("enter", (el) => {
     $("body").css("background", $(el).parent().attr("data-background"));
     console.log("set body background to " + $(el).parent().attr("data-background"));
