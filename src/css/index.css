@@ -37,9 +37,42 @@ body {
 }
 
 section {
-    height: 100%;
+    height: 110%;
     position: relative;
     text-align: center;
+}
+
+/* NAV */
+#nav-main {
+    transition: .3s;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .nav-item {
+        border-bottom: 1px solid #c9c9c9;
+        margin: 3vh 0;
+        padding: 0 2vh;
+    }
+}
+
+.navbar-brand .quote {
+    font-weight: 900;
+}
+
+.nav-item {
+    font-size: 20px;
+    transition: .3s;
+}
+
+.navbar-toggler {
+    border: 0;
 }
 
 /* HERO */
