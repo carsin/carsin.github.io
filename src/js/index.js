@@ -21,6 +21,11 @@ inView(".title-scrollspy").on("enter", (el) => {
     }
 });
 
+$(window).on("load", () => {
+    $("body").removeClass("preload");
+    $("body").css("opacity", "100");
+});
+
 $(".navbar-toggler").click(() => {
     setTimeout(() => {
         if ($(".navbar-toggler").hasClass("collapsed")) {
