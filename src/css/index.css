@@ -92,12 +92,15 @@ section {
 #hero .title-main {
     font-weight: 100;
     line-height: 50px;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: -3px;
 }
 
 #hero .sub-title {
     color: rgba(0, 0, 0, 0.80);
     font-weight: 100;
     line-height: 25px;
+    letter-spacing: -2x;
     font-family: "Work Sans", sans-serif;;
 }
 
