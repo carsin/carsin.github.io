@@ -90,7 +90,6 @@ section {
 }
 
 #hero .title-main {
-    text-transform: lowercase;
     font-weight: 100;
     letter-spacing: 4px;
     line-height: 50px;
