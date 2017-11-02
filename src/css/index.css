@@ -15,7 +15,6 @@ body {
 }
 
 .x-divider {
-    font-size: 35px;
     color: black;
     font-family: "Source Sans Pro", sans-serif;;
 }
@@ -37,7 +36,7 @@ body {
 }
 
 section {
-    height: 110%;
+    height: 100%;
     position: relative;
     text-align: center;
 }
@@ -91,7 +90,7 @@ section {
 
 #hero .title-main {
     font-weight: 100;
-    line-height: 50px;
+    line-height: 40px;
     font-family: "Karla", sans-serif;
     letter-spacing: -3px;
 }
