@@ -116,7 +116,7 @@ section {
 
 #hero-bottom {
     position: absolute;
-    bottom: 11%;
+    bottom: 1%;
     left: 50%;
     transform: translateX(-50%);
     transition: 0.4s;
