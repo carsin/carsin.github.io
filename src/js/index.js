@@ -78,25 +78,16 @@ function setActive(el) {
 
 $(".nav-scroll").click(function(e) {
     var href = $(this).attr("href");
-    if (!$(".navbar-toggler").hasClass("collapsed")) {
-        $(".navbar-toggler").click(); // close navbar
-        // set active class on nav
-        $("#nav-items").find(".nav-item.active").removeClass("active");
-        var navEle = $("#nav-items").find("a[href='#" + href + "']");
-        navEle.addClass("active");
-    } else if ($(".navbar-toggler").hasClass("collapsed")) {
-        $("html, body").stop().animate({
-            scrollTop: $(href).offset().top - $("#nav-main").height()
-        }, 300);
-        e.preventDefault();
-    } else {
-        console.log("ERROR: Unexpected navbar state.");
-    }
+    $(".navbar-toggler").click(); // close navbar
+    $("html,body").animate({
+        scrollTop: $(href).offset().top - ($(window).height() - $(href).height()) / 2
+    }, 500);
+    e.preventDefault();
 });
 
 $(".smooth-scroll").click(function(e) {
     var href = $(this).attr("href");
-    $('html, body').stop().animate({
+    $('html, body').animate({
         scrollTop: $(href).offset().top - $("#nav-main").height()
     }, 300);
     e.preventDefault();
