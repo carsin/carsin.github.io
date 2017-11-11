@@ -100,5 +100,9 @@ $(window).scroll(() => {
 });
 
 $(document).ready(() => {
-    $("body").removeClass("preload"); // no anims before page loads :)
+    $(this).scrollTop(0);
+});
+
+$(window).on("load", () => {
+    $("body").removeClass("preload");
 });
