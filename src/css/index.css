@@ -95,6 +95,7 @@ body { transition: .3s ease-in-out; }
 
 .navbar-brand {
     transition: 0.3s ease-in-out;
+    color: black;
     font-size: 24px;
 }
 

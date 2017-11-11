@@ -64,10 +64,6 @@ $(".navbar-toggler").click(() => {
 function setColors(el) {
     var color = $(el).attr("data-background");
     $("body").css("background", color);
-    //if ($(".navbar-toggler").hasClass("collapsed")) $("#nav-main").css("background", color);
-
-    // DEBUG
-    console.log("set colors to " + color);
 }
 
 function setActive(el) {
@@ -88,8 +84,8 @@ $(".nav-scroll").click(function(e) {
 $(".smooth-scroll").click(function(e) {
     var href = $(this).attr("href");
     $('html, body').animate({
-        scrollTop: $(href).offset().top - $("#nav-main").height()
-    }, 300);
+        scrollTop: $(href).offset().top - ($(window).height() - $(href).height()) / 2
+    }, 500);
     e.preventDefault();
 });
 
@@ -97,12 +93,4 @@ $(window).scroll(() => {
     var st = $(this).scrollTop();
     var limit = 350;
     if (st <= limit) $("#hero-bottom").css("opacity", (1 - st/limit));
-});
-
-$(document).ready(() => {
-    $(this).scrollTop(0);
-});
-
-$(window).on("load", () => {
-    $("body").removeClass("preload");
 });
