@@ -17,7 +17,7 @@ html, body {
 }
 
 body { transition: .3s ease-in-out; }
-.feature-container { min-height: 100%; margin-bottom: 5%; }
+.feature-container { height: 100%; margin-bottom: 5%; }
 
 .feature {
     display: flex;
