@@ -132,7 +132,7 @@ body { transition: .3s ease-in-out; }
 #hero.hero-black h1 { color: rgba(0, 0, 0, 0.9); }
 #hero.hero-black #hero-bottom i, #hero.hero-black h3 { color: rgba(0, 0, 0, 0.8); }
 #hero h3 { color: rgba(255, 255, 255, 0.8); line-height: 1; }
-#hero-button { position: absolute; top: 58%; }
+/* #hero-button { position: absolute; top: 58%; } */ 
 
 #hero-bottom {
     position: absolute;
@@ -147,11 +147,6 @@ body { transition: .3s ease-in-out; }
     transform: translateX(-50%);
     font-size: 50px;
     position: absolute;
-}
-
-/* WHAT WE DO */
-#about .btn {
-    width: 20%;
 }
 
 /* ANIMATIONS */
