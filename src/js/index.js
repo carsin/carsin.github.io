@@ -2,13 +2,13 @@ var prevImg;
 var isImg = true;
 var heroViewing = true;
 
+var navColor = $("#nav-main").css("background-color");
+
 inView(".title-scrollspy").on("enter", (el) => {
     setActive(el);
 });
 
 inView(".title-image").on("enter", (el) => {
-    $("#nav-main").toggleClass("over-image");
-    $("#nav-main").css("background", "rgba(0, 0, 0, 0)");
     prevImg = $("body").find($("#" + $(el).attr("data-bgid")));
     prevImg.css("opacity", "100")
     isImg = true;
@@ -20,14 +20,6 @@ inView(".title-color").on("enter", (el) => {
         $("#hero").toggleClass("hero-black")
         $("#hero-button").toggleClass("btn-inverted");
         heroViewing = false;
-    }
-
-    if (isImg) {
-        $("#nav-main").toggleClass("over-image");
-        $("#navbar-img1").fadeOut(150, () => {
-            $("#navbar-img2").fadeIn(150);
-        });
-        isImg = false;
     }
 
     prevImg.css("opacity", "0");
@@ -50,7 +42,7 @@ $(".navbar-toggler").click(() => {
     $(".navbar").toggleClass("active");
     setTimeout(() => {
         if ($(".navbar-toggler").hasClass("collapsed")) {
-            $("#nav-main").css("background", "rgba(0, 0, 0, 0)");
+            $("#nav-main").css("background", navColor);
         } else {
             // Set nav color to background
             // $("#nav-main").css("background", $("body").css("background-color"));

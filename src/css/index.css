@@ -77,12 +77,12 @@ body { transition: .3s ease-in-out; }
 .btn-inverted:hover { color: black !important; }
 
 .background-image {
-    height: 110vh;
+    height: 106vh;
     width: 100vw;
     filter: brightness(0.5);
-    bottom: -10vh;
     position: fixed;
     z-index: -1;
+    top: -6vh;
     object-fit: cover;
     transition: .3s ease-in-out;
 }
@@ -90,7 +90,7 @@ body { transition: .3s ease-in-out; }
 /* NAV */
 #nav-main {
     transition: .3s ease-in-out;
-    background-color: transparent;
+    background-color: #4F5D2F;
 }
 
 .navbar-brand {
@@ -106,9 +106,9 @@ body { transition: .3s ease-in-out; }
 }
 
 .navbar.active * { transition: .3s ease-in-out; }
-.navbar.active .navbar-brand, .navbar.over-image .navbar-brand { color: white; }
-.navbar.active .nav-item, .navbar.over-image .nav-item { color: rgb(200, 200, 200); }
-.navbar.active .nav-item.active, .navbar.over-image .nav-item.active { color: white; }
+.navbar.active .navbar-brand { color: white; }
+.navbar.active .nav-item { color: rgb(200, 200, 200); }
+.navbar.active .nav-item.active { color: white; }
 
 .nav-item {
     border-bottom: 1px solid rgb(150, 150, 150);
@@ -127,12 +127,13 @@ body { transition: .3s ease-in-out; }
 
 /* HERO */
 #hero * { transition: .3s ease-in-out; }
-#hero { background-color: transparent; }
+#hero { background-color: transparent; height: 100%; }
+#hero-text { margin-top: -30%; }
 #hero h1 { color: rgba(255, 255, 255, 0.9); }
 #hero.hero-black h1 { color: rgba(0, 0, 0, 0.9); }
 #hero.hero-black #hero-bottom i, #hero.hero-black h3 { color: rgba(0, 0, 0, 0.8); }
 #hero h3 { color: rgba(255, 255, 255, 0.8); line-height: 1; }
-#hero-button { position: absolute; top: 58%; }
+#hero-button { margin-top: 1%; position: absolute; }
 
 #hero-bottom {
     position: absolute;
