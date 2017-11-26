@@ -149,15 +149,11 @@ html, body {
 #projects .card {
     margin: 0 20px;
     color: rgba(0, 0, 0, 0.9);
-    border: 1px solid #000;
+    border: 0;
     border-radius: 0;
     background-color: #f2efea;
     width: 35%;
     padding-bottom: 15px;
-}
-
-#projects .card-img-top {
-    height: 60%;
 }
 
 #projects .card-link-icon {
@@ -172,6 +168,7 @@ html, body {
 
 #projects .card-img-top {
     border-radius: 0;
+    height: 60%;
 }
 
 #projects .card-title {
