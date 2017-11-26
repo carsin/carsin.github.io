@@ -103,7 +103,7 @@ html, body {
 
 #hero * { transition: .3s ease-in-out; }
 #hero { background-color: transparent; height: 100%; }
-#hero-text { margin-top: -30%; }
+#hero-text { margin-top: -6%; }
 #hero h1 { color: rgba(255, 255, 255, 0.9); }
 #hero.hero-black h1 { color: rgba(0, 0, 0, 0.9); }
 #hero.hero-black #hero-bottom i, #hero.hero-black h3 { color: rgba(0, 0, 0, 0.8); }
