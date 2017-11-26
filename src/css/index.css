@@ -135,6 +135,36 @@ html, body {
 }
 
 /*
+ * PROJECTS
+ */
+
+#projects .card {
+    color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 0;
+    background-color: #f2efea;
+}
+
+#projects .card-link-icon {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.7);
+    transition: 0.2s ease-in-out;
+}
+
+#projects .card-link-icon:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+#projects .card-img-top {
+    border-radius: 0;
+}
+
+#projects .card-title {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/*
  * ANIMATIONS
  */
 
