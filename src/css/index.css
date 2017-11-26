@@ -35,9 +35,8 @@ html, body {
 }
 
 @media (max-width: 767px) {
-    .feature {
-        align-items: center;
-        text-align: center;
+    .feature-container {
+        margin: 10% 0;
     }
 }
 
