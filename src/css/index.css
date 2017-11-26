@@ -1,4 +1,7 @@
-/* GLOBAL */
+/*
+ * GLOBAL
+ */
+
 html, body {
     font-family: "Roboto", sans-serif;
     height: 100%;
@@ -8,9 +11,7 @@ html, body {
     color: rgba(0, 0, 0, .8);
 }
 
-.noscroll {
-    overflow: hidden;
-}
+.noscroll { overflow: hidden; }
 
 .preload * {
     -webkit-transition: none !important;
@@ -46,42 +47,6 @@ body { transition: .3s ease-in-out; }
 
 .info { font-size: 25px; }
 
-/* Global button  */
-.animated-button:link, .animated-button:visited {
-	position: relative;
-	display: block;
-    float: left;
-    clear: left;
-	padding: 10px 20px;
-	color: black;
-	font-size: 20px;
-    font-family: "Karla", sans-serif;
-	text-align: center;
-    font-weight: 100;
-    border-radius: 0;
-	overflow: hidden;
-    transition: all .3s cubic-bezier(.83,.19,.31,.97);
-}
-
-.animated-button:link:after, .animated-button:visited:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-    transition: all .3s cubic-bezier(.83,.19,.31,.97) 0s;
-}
-
-.animated-button:link:hover, a.animated-button:visited:hover { color: #FFF; }
-.animated-button:link:hover:after, a.animated-button:visited:hover:after { height: 450%; }
-.animated-button { border: 1px solid black; }
-.animated-button:after { background: black; transform: translateX(-50%) translateY(-50%) rotate(25deg); }
-.btn-inverted { color: rgba(255, 255, 255, 0.8) !important; border: 1px solid white !important; }
-.btn-inverted:after { background-color: white !important; }
-.btn-inverted:hover { color: black !important; }
-
 .background-image {
     height: 106vh;
     width: 100vw;
@@ -93,7 +58,10 @@ body { transition: .3s ease-in-out; }
     transition: .3s ease-in-out;
 }
 
-/* NAV */
+/*
+ * NAV
+ */
+
 #nav-main {
     transition: .3s ease-in-out;
     background-color: transparent;
@@ -131,7 +99,10 @@ body { transition: .3s ease-in-out; }
     text-transform: uppercase;
 }
 
-/* HERO */
+/*
+ * HERO
+ */
+
 #hero * { transition: .3s ease-in-out; }
 #hero { background-color: transparent; height: 100%; }
 #hero-text { margin-top: -30%; }
@@ -157,13 +128,6 @@ body { transition: .3s ease-in-out; }
     position: absolute;
 }
 
-/* ANIMATIONS */
-@keyframes bobUpDown {
-    0% { bottom: 7%; }
-    50% { bottom: 9%; }
-    100% { bottom: 7%; }
-}
-
 /*
  * ABOUT
  */
@@ -171,3 +135,52 @@ body { transition: .3s ease-in-out; }
 #about .btn {
     width: 250px;
 }
+
+/*
+ * ANIMATIONS
+ */
+
+/* Bob element up and down */
+@keyframes bobUpDown {
+    0% { bottom: 7%; }
+    50% { bottom: 9%; }
+    100% { bottom: 7%; }
+}
+
+
+/* Sexy button animation */
+.animated-button:link, .animated-button:visited {
+	position: relative;
+	display: block;
+    float: left;
+    clear: left;
+	padding: 10px 20px;
+	color: black;
+	font-size: 20px;
+    font-family: "Karla", sans-serif;
+	text-align: center;
+    font-weight: 100;
+    border-radius: 0;
+	overflow: hidden;
+    transition: all .3s cubic-bezier(.83,.19,.31,.97);
+}
+
+.animated-button:link:after, .animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+    transition: all .3s cubic-bezier(.83,.19,.31,.97) 0s;
+}
+
+.animated-button:link:hover, a.animated-button:visited:hover { color: #FFF; }
+.animated-button:link:hover:after, a.animated-button:visited:hover:after { height: 450%; }
+.animated-button { border: 1px solid black; }
+.animated-button:after { background: black; transform: translateX(-50%) translateY(-50%) rotate(25deg); }
+.btn-inverted { color: rgba(255, 255, 255, 0.8) !important; border: 1px solid white !important; }
+.btn-inverted:after { background-color: white !important; }
+.btn-inverted:hover { color: black !important; }
+
