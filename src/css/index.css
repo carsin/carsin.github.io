@@ -110,7 +110,7 @@ html, body {
 #hero.hero-black h1 { color: rgba(0, 0, 0, 0.9); }
 #hero.hero-black #hero-bottom i, #hero.hero-black h3 { color: rgba(0, 0, 0, 0.8); }
 #hero h3 { color: rgba(255, 255, 255, 0.8); line-height: 1; }
-#hero-button { margin-top: 1%; position: absolute; }
+#hero-button { margin-top: 1%; position: absolute; left: 50%; transform: translateX(-50%); width: 170px; }
 
 #hero-bottom {
     position: absolute;
