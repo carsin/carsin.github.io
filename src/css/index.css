@@ -10,7 +10,7 @@ body { transition: .3s ease-in-out; }
 .disabled { text-decoration: line-through; }
 
 html, body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Helvetica", "Roboto", "Arial", sans-serif;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -40,7 +40,6 @@ html, body {
 }
 
 .title {
-	font-family: "Work Sans", sans-serif;
 	font-weight: bold;
 	color: #000;
 	text-transform: uppercase;
@@ -138,11 +137,16 @@ html, body {
  * PROJECTS
  */
 
+#projects .title {
+    margin-bottom: 7%;
+}
+
 #projects .card {
     color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
+    border: 1px solid #000;
     border-radius: 0;
     background-color: #f2efea;
+    padding-bottom: 15px;
 }
 
 #projects .card-link-icon {
@@ -161,7 +165,12 @@ html, body {
 
 #projects .card-title {
     margin-top: 20px;
+    font-weight: bold;
     text-transform: uppercase;
+}
+
+#projects .card-text {
+    padding-bottom: 15px;
 }
 
 /*
@@ -192,7 +201,6 @@ html, body {
 	padding: 10px 20px;
 	color: black;
 	font-size: 20px;
-    font-family: "Karla", sans-serif;
 	text-align: center;
     font-weight: 100;
     border-radius: 0;
