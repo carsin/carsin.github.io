@@ -156,6 +156,10 @@ html, body {
     padding-bottom: 15px;
 }
 
+#projects .card-img-top {
+    height: 60%;
+}
+
 #projects .card-link-icon {
     font-size: 40px;
     color: rgba(0, 0, 0, 0.7);
