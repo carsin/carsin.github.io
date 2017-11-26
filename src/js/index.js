@@ -39,6 +39,7 @@ inView("#hero-title").on("enter", (el) => {
 
 $(".navbar-toggler").click(() => {
     $(".navbar-toggler").toggleClass("is-active");
+    $("body").toggleClass("noscroll");
     $(".navbar").toggleClass("active");
     setTimeout(() => {
         if ($(".navbar-toggler").hasClass("collapsed")) {

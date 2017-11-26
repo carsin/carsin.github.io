@@ -8,6 +8,10 @@ html, body {
     color: rgba(0, 0, 0, .8);
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
@@ -46,6 +50,8 @@ body { transition: .3s ease-in-out; }
 .animated-button:link, .animated-button:visited {
 	position: relative;
 	display: block;
+    float: left;
+    clear: left;
 	padding: 10px 20px;
 	color: black;
 	font-size: 20px;
@@ -90,12 +96,12 @@ body { transition: .3s ease-in-out; }
 /* NAV */
 #nav-main {
     transition: .3s ease-in-out;
-    background-color: #4F5D2F;
+    background-color: transparent;
 }
 
 .navbar-brand {
     transition: 0.3s ease-in-out;
-    color: black;
+    color: rgba(255, 255, 255, 0.9) !important;
     font-size: 24px;
 }
 
@@ -138,6 +144,7 @@ body { transition: .3s ease-in-out; }
 #hero-bottom {
     position: absolute;
     left: 50%;
+    z-index: -1;
     transform: translateX(-50%);
     transition: .3s ease-in-out;
     animation: bobUpDown 2s ease-in-out infinite;
@@ -155,4 +162,12 @@ body { transition: .3s ease-in-out; }
     0% { bottom: 7%; }
     50% { bottom: 9%; }
     100% { bottom: 7%; }
+}
+
+/*
+ * ABOUT
+ */
+
+#about .btn {
+    width: 250px;
 }
