@@ -2,11 +2,12 @@
  * GLOBAL
  */
 
+body { transition: .3s ease-in-out; }
 .info { font-size: 25px; }
 .feature-container { height: 100%; margin-bottom: 5%; }
 .btn.disabled:hover { cursor: not-allowed; }
 .noscroll { overflow: hidden; }
-body { transition: .3s ease-in-out; }
+.disabled { text-decoration: line-through; }
 
 html, body {
     font-family: "Roboto", sans-serif;
@@ -35,9 +36,7 @@ html, body {
 }
 
 @media (max-width: 767px) {
-    .feature-container {
-        margin: 10% 0;
-    }
+    .feature-container { margin: 10% 0; }
 }
 
 .title {
