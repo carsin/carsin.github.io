@@ -29,6 +29,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     height: 100%;
 }
 
@@ -62,9 +64,9 @@ html, body {
  */
 
 .navbar.active * { transition: .3s ease-in-out; }
-.navbar.active .navbar-brand { color: white; }
-.navbar.active .nav-item { color: rgb(200, 200, 200); }
-.navbar.active .nav-item.active { color: white; }
+.navbar.active .navbar-brand, .navbar.over-image .navbar-brand { color: white; }
+.navbar.active .nav-item, .navbar.over-image .nav-item { color: rgb(200, 200, 200); }
+.navbar.active .nav-item.active, .navbar.over-image .nav-item.active { color: white; }
 .navbar-nav { height: 100vh; }
 
 #nav-main {
@@ -74,7 +76,7 @@ html, body {
 
 .navbar-brand {
     transition: 0.3s ease-in-out;
-    color: rgba(255, 255, 255, 0.9) !important;
+    color: rgba(0, 0, 0, 0.9);
     font-size: 24px;
 }
 
