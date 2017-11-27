@@ -139,6 +139,8 @@ html, body {
 
 #projects #cards {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -147,13 +149,17 @@ html, body {
 }
 
 #projects .card {
-    margin: 0 20px;
+    margin: 20px;
     color: rgba(0, 0, 0, 0.9);
     border: 0;
     border-radius: 0;
     background-color: #f2efea;
-    width: 35%;
+    width: 40%;
     padding-bottom: 15px;
+}
+
+#projects .card-block {
+    height: 30vh;
 }
 
 #projects .card-link-icon {
@@ -177,8 +183,11 @@ html, body {
     text-transform: uppercase;
 }
 
-#projects .card-text {
-    padding-bottom: 15px;
+#projects .card-links {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*
