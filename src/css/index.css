@@ -137,15 +137,12 @@ html, body {
  * PROJECTS
  */
 
+#projects .title { margin-bottom: 5%; }
 #projects #cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#projects .title {
-    margin-bottom: 5%;
 }
 
 #projects .card {
@@ -162,16 +159,6 @@ html, body {
 @media (min-width: 767px) {
     #projects .card-movedown { transform: translateY(6%); }
     #projects .card-moveup { transform: translateY(-6%); }
-}
-
-#projects .card-link-icon {
-    font-size: 40px;
-    color: rgba(0, 0, 0, 0.7);
-    transition: 0.2s ease-in-out;
-}
-
-#projects .card-link-icon:hover {
-    color: rgba(0, 0, 0, 0.9);
 }
 
 #projects .card-img-top {
@@ -192,6 +179,9 @@ html, body {
     transform: translateX(-50%);
 }
 
+#projects .card-link-icon { font-size: 40px; color: rgba(0, 0, 0, 0.7); transition: 0.2s ease-in-out; }
+#projects .card-link-icon:hover { color: rgba(0, 0, 0, 0.9); }
+
 /*
  * ANIMATIONS
  */
@@ -202,7 +192,6 @@ html, body {
     50% { bottom: 9%; }
     100% { bottom: 7%; }
 }
-
 
 /* Sexy button animation */
 .animated-button:link:hover, a.animated-button:visited:hover { color: #FFF; }
