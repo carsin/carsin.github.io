@@ -153,20 +153,14 @@ html, body {
     border: 0;
     border-radius: 0;
     background-color: #f2efea;
-    width: 27vw;
-    height: 60vh;
+    width: 24rem;
+    height: 26rem;
     padding-bottom: 15px;
 }
 
-@media (max-width: 767px) {
-    #projects .card {
-        width: 280px;
-    }
-}
-
-@media (min-width: 767px) {
-    #projects .card-movedown { transform: translateY(6%); }
-    #projects .card-moveup { transform: translateY(-6%); }
+@media (min-width: 992px) {
+    #projects .card-movedown { transform: translateY(2rem); }
+    #projects .card-moveup { transform: translateY(-2rem); }
 }
 
 #projects .card-img-top {
@@ -175,9 +169,17 @@ html, body {
 }
 
 #projects .card-title {
-    margin-top: 20px;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    margin-top: 1rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+#projects .card-text {
+    margin: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 #projects .card-links {
