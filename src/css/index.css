@@ -181,22 +181,16 @@ nav.active .cross:after { width: 40px; transition-delay: .4s; }
  */
 
 #projects .title { margin-bottom: 5%; }
-#projects #cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 #projects .card {
-    margin: 20px;
     color: rgba(0, 0, 0, 0.9);
     border: 0;
     border-radius: 0;
     background-color: #f2efea;
-    width: 20rem;
+    max-width: 90%;
+    margin: auto;
     height: 25rem;
-    padding-bottom: 15px;
+    padding: 0 0 15px 0;
 }
 
 @media (min-width: 992px) {
