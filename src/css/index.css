@@ -99,17 +99,19 @@ html, body {
 }
 
 /* Nav hamburger anim */
+.navbar-toggler { border: 0; }
 .hamburger {
     display: inline-block;
     cursor: pointer;
-    width: 50px;
+    width: 40px;
+    border: none;
 }
 
 .line-1, .line-2, .line-3 {
     position: relative;
     display: block;
     width: 40px;
-    height: 2px;
+    height: 1px;
     background: white;
     top: 0;
     margin-bottom: 10px;
