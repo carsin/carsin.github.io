@@ -2,7 +2,7 @@
  * GLOBAL
  */
 
-body { transition: .3s ease-in-out; }
+body { transition: .4s ease-in-out; }
 .info { font-size: 25px; }
 .hidden { visibility: hidden; }
 .feature-container { min-height: 100vh; margin: 10vh 0;}
@@ -55,26 +55,26 @@ html, body {
     z-index: -1;
     top: -6vh;
     object-fit: cover;
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 /*
  * NAV
  */
 
-.navbar.active * { transition: .3s ease-in-out; }
+.navbar.active * { transition: .4s ease-in-out; }
 .navbar.active .navbar-brand, .navbar.over-image .navbar-brand { color: white; }
 .navbar.active .nav-item, .navbar.over-image .nav-item { color: rgb(200, 200, 200); }
 .navbar.active .nav-item.active, .navbar.over-image .nav-item.active { color: white; }
 .navbar-nav { height: 100vh; }
 
 #nav-main {
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
     background-color: transparent;
 }
 
 .navbar-brand {
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
     color: rgba(0, 0, 0, 0.9);
     font-size: 24px;
 }
@@ -93,15 +93,14 @@ html, body {
 
 .nav-item {
     font-size: 20px;
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
     margin-left: 5%;
     text-transform: uppercase;
 }
 
 /* Nav hamburger anim */
-
 .hamburger {
-    position: absolute;
+    display: inline-block;
     cursor: pointer;
     width: 50px;
 }
@@ -114,38 +113,40 @@ html, body {
     background: white;
     top: 0;
     margin-bottom: 10px;
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
     border: none;
     margin-left: auto;
     margin-right: auto;
 }
 
 .line-1{
-    transition-delay: 0.1s;
 }
 
 .line-2{
-    transition-delay: 0.15s;
+    transition-delay: 0.05s;
 }
 
 .line-3 {
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
     margin-bottom: 0;
 }
 
 nav.active .line-1{
-    transition-delay: 0.1s;
     width: 0;
 }
 
 nav.active .line-2{
-    transition-delay: 0.15s;
+    transition-delay: 0.05s;
     width: 0;
 }
 
 nav.active .line-3{
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
     width: 0;
+}
+
+.cross-container {
+    transform: translateY(-12px);
 }
 
 .cross, .cross:after{
@@ -153,14 +154,11 @@ nav.active .line-3{
   width: 0;
   height: 2px;
   background: rgb(192, 57, 43);
-  top: 50%;
-  left: 50%;
   transition: 0.2s ease-in-out;
 }
 
 .cross{
   transform: translate(-50%, -50%) rotate(45deg);
-  transition-delay: 0.2s;
 }
 
 .cross:after{
@@ -182,7 +180,7 @@ nav.active .cross:after{
  * HERO
  */
 
-#hero * { transition: .3s ease-in-out; }
+#hero * { transition: .4s ease-in-out; }
 #hero { background-color: transparent; height: 100%; }
 #hero-text { margin-top: -6%; }
 #hero h1 { color: rgba(255, 255, 255, 0.9); }
@@ -196,7 +194,7 @@ nav.active .cross:after{
     left: 50%;
     z-index: -1;
     transform: translateX(-50%);
-    transition: .3s ease-in-out;
+    transition: .4s ease-in-out;
     animation: bobUpDown 2s ease-in-out infinite;
 }
 
@@ -303,7 +301,7 @@ nav.active .cross:after{
     font-weight: 100;
     border-radius: 0;
 	overflow: hidden;
-    transition: all .3s cubic-bezier(.83,.19,.31,.97);
+    transition: all .4s cubic-bezier(.83,.19,.31,.97);
 }
 
 .animated-button:link:after, .animated-button:visited:after {
@@ -314,6 +312,6 @@ nav.active .cross:after{
 	top: 50%;
 	width: 150%;
 	z-index: -1;
-    transition: all .3s cubic-bezier(.83,.19,.31,.97) 0s;
+    transition: all .4s cubic-bezier(.83,.19,.31,.97) 0s;
 }
 
