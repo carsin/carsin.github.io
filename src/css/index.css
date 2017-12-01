@@ -231,8 +231,8 @@ nav.active .cross:after{
     border: 0;
     border-radius: 0;
     background-color: #f2efea;
-    width: 24rem;
-    height: 26rem;
+    width: 20rem;
+    height: 25rem;
     padding-bottom: 15px;
 }
 
@@ -314,4 +314,3 @@ nav.active .cross:after{
 	z-index: -1;
     transition: all .4s cubic-bezier(.83,.19,.31,.97) 0s;
 }
-
