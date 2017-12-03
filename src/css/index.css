@@ -255,9 +255,9 @@ textarea {
 	margin: 0;
 	display: block;
 	opacity: 1;
-	-webkit-transition: .333s ease top, .333s ease opacity;
-	transition: .333s ease top, .333s ease opacity;
+	transition: .3s ease top, .3s ease opacity;
 }
+
 .form-control {
 	border-radius: 0;
 	border-color: #ccc;
@@ -265,15 +265,25 @@ textarea {
    	border-style: none none solid none;
    	box-shadow: none;
 }
+
 .form-control:focus {
 	box-shadow: none;
 	border-color: #5e9bfc;
 }
+
 .js-hide-label {
 	opacity: 0;
 }
+
 .js-unhighlight-label {
 	color: #999
+}
+
+#contact .btn {
+    font-size: 1rem;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*
@@ -303,6 +313,7 @@ textarea {
     background: transparent;
 	padding: 10px 20px;
 	color: black;
+    font-family: "Roboto Mono", san-serif;
 	font-size: 20px;
 	text-align: center;
     font-weight: 100;
