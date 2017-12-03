@@ -10,6 +10,7 @@ body { transition: .4s ease-in-out; }
 .noscroll { overflow: hidden; }
 .no-margin { margin: 0; }
 .disabled { text-decoration: line-through; }
+.background-color-adapt { transition: .4s ease-in-out; }
 
 html, body {
     font-family: "Helvetica", "Roboto", "Arial", sans-serif;

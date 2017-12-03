@@ -64,6 +64,7 @@ $(".navbar-toggler").click(() => {
 function setColors(el) {
     var color = $(el).attr("data-background");
     $("body").css("background", color);
+    $(".background-color-adapt").css("background", color);
 }
 
 function setActive(el) {
