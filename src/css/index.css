@@ -261,8 +261,8 @@ textarea {
 
 .form-control {
 	border-radius: 0;
-	border-color: #ccc;
-   	border-width: 0 0 2px 0;
+	border-color: rgba(0, 0, 0, 0.8);
+   	border-width: 0 0 1px 0;
    	border-style: none none solid none;
    	box-shadow: none;
 }
@@ -301,8 +301,8 @@ textarea {
 /* Sexy button animation */
 .animated-button:hover, .animated-button:visited:hover { color: #FFF; }
 .animated-button:hover:after, .animated-button:visited:hover:after { height: 450%; }
-.animated-button { border: 1px solid black; }
-.animated-button:after { background: black; transform: translateX(-50%) translateY(-50%) rotate(25deg); }
+.animated-button { border: 1px solid rgba(0, 0, 0, 0.8); }
+.animated-button:after { background: rgba(0, 0, 0, 0.95); transform: translateX(-50%) translateY(-50%) rotate(25deg); }
 .btn-inverted { color: rgba(255, 255, 255, 0.8) !important; border: 1px solid white !important; }
 .btn-inverted:after { background-color: white !important; }
 .btn-inverted:hover { color: black !important; }
@@ -313,8 +313,8 @@ textarea {
     clear: left;
     background: transparent;
 	padding: 10px 20px;
-	color: black;
-    font-family: "Roboto Mono", san-serif;
+	color: rgba(0, 0, 0, 0.9);
+    font-family: "Roboto", san-serif;
 	font-size: 20px;
 	text-align: center;
     font-weight: 100;
