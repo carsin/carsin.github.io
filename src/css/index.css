@@ -237,6 +237,46 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
 #projects .card-link-icon:hover { color: rgba(0, 0, 0, 0.9); }
 
 /*
+ * CONTACT ME
+ */
+
+textarea {
+	resize: none;
+}
+
+#contact input, #contact textarea {
+    background-color: #F2EFEA
+}
+
+.form-label {
+	font-size: 12px;
+	color: #5e9bfc;
+    text-align: left;
+	margin: 0;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+	transition: .333s ease top, .333s ease opacity;
+}
+.form-control {
+	border-radius: 0;
+	border-color: #ccc;
+   	border-width: 0 0 2px 0;
+   	border-style: none none solid none;
+   	box-shadow: none;
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #5e9bfc;
+}
+.js-hide-label {
+	opacity: 0;
+}
+.js-unhighlight-label {
+	color: #999
+}
+
+/*
  * ANIMATIONS
  */
 
@@ -248,18 +288,19 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
 }
 
 /* Sexy button animation */
-.animated-button:link:hover, a.animated-button:visited:hover { color: #FFF; }
-.animated-button:link:hover:after, a.animated-button:visited:hover:after { height: 450%; }
+.animated-button:hover, .animated-button:visited:hover { color: #FFF; }
+.animated-button:hover:after, .animated-button:visited:hover:after { height: 450%; }
 .animated-button { border: 1px solid black; }
 .animated-button:after { background: black; transform: translateX(-50%) translateY(-50%) rotate(25deg); }
 .btn-inverted { color: rgba(255, 255, 255, 0.8) !important; border: 1px solid white !important; }
 .btn-inverted:after { background-color: white !important; }
 .btn-inverted:hover { color: black !important; }
-.animated-button:link, .animated-button:visited {
+.animated-button, .animated-button:visited {
 	position: relative;
 	display: block;
     float: left;
     clear: left;
+    background: transparent;
 	padding: 10px 20px;
 	color: black;
 	font-size: 20px;
@@ -270,7 +311,7 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
     transition: all .4s cubic-bezier(.83,.19,.31,.97);
 }
 
-.animated-button:link:after, .animated-button:visited:after {
+.animated-button:after, .animated-button:visited:after {
 	content: "";
 	position: absolute;
 	height: 0%;
