@@ -48,6 +48,11 @@ html, body {
 	text-transform: uppercase;
 }
 
+.sub-title {
+    color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
 .background-image {
     height: 106vh;
     width: 100vw;
@@ -207,7 +212,7 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
  * PROJECTS
  */
 
-#projects .title, #projects .row { margin-bottom: 5rem; }
+#projects .sub-title, #projects .row { margin-bottom: 5rem; }
 
 #projects .card {
     color: rgba(0, 0, 0, 0.9);
