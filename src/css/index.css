@@ -247,10 +247,14 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { backgro
  */
 
 textarea { resize: none; }
-#contact input, #contact textarea { background-color: #F2EFEA }
+#contact input, #contact textarea { background-color: #F2EFEA; }
 .form-control:focus { box-shadow: none; border-color: #5e9bfc; }
 .js-hide-label { opacity: 0; }
 .js-unhighlight-label { color: #999; }
+
+#contact {
+    border: 1rem solid transparent;
+}
 
 .form-label {
 	font-size: 12px;
