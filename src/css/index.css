@@ -293,14 +293,14 @@ textarea { resize: none; }
 }
 
 /* Sexy button animation */
-.animated-button:hover, .animated-button:visited:hover { color: #FFF; }
-.animated-button:hover:after, .animated-button:visited:hover:after { height: 450%; }
+.animated-button:hover { color: #FFF; }
+.animated-button:hover:after { height: 450%; }
 .animated-button { border: 1px solid rgba(0, 0, 0, 0.8); }
 .animated-button:after { background: rgba(0, 0, 0, 0.95); transform: translateX(-50%) translateY(-50%) rotate(25deg); }
 .btn-inverted { color: rgba(255, 255, 255, 0.8) !important; border: 1px solid white !important; }
 .btn-inverted:after { background-color: white !important; }
 .btn-inverted:hover { color: black !important; }
-.animated-button, .animated-button:visited {
+.animated-button {
 	position: relative;
 	display: block;
     float: left;
@@ -317,7 +317,7 @@ textarea { resize: none; }
     transition: all .4s cubic-bezier(.83,.19,.31,.97);
 }
 
-.animated-button:after, .animated-button:visited:after {
+.animated-button:after {
 	content: "";
 	position: absolute;
 	height: 0%;
