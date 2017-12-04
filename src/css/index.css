@@ -157,7 +157,7 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { backgro
 #hero h1 { color: rgba(255, 255, 255, 0.9); }
 #hero.hero-black h1 { color: rgba(0, 0, 0, 0.9); }
 #hero.hero-black #hero-links i, #hero.hero-black #hero-bottom i, #hero.hero-black h3 { color: rgba(0, 0, 0, 0.8); }
-#hero h3 { color: rgba(255, 255, 255, 0.8); line-height: 0.5; }
+#hero h3 { color: rgba(255, 255, 255, 0.8); line-height: 1; }
 #hero-button { margin-top: 1rem; position: absolute; left: 50%; transform: translateX(-50%); width: 170px; }
 #hero-links:hover i { transition: .2s ease-in-out; color: rgba(255, 255, 255, 0.4); }
 #hero-links i:hover { color: rgba(255, 255, 255, 1); }
