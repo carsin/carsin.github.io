@@ -81,7 +81,8 @@ html, body {
 
 .navbar-brand {
     transition: 0.4s ease-in-out;
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
     font-size: 24px;
 }
 
@@ -116,15 +117,12 @@ nav.active .line-3 { transition-delay: 0.1s; width: 0; }
 .cross:after { content: ""; transform: translate(-50%, -50%) rotate(90deg); }
 nav.active .cross { width: 40px; transition-delay: 0.3s; }
 nav.active .cross:after { width: 40px; transition-delay: .4s; }
+nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { background: white; }
 .hamburger {
     display: inline-block;
     cursor: pointer;
     width: 40px;
     border: none;
-}
-
-nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
-    background: white;
 }
 
 .line-1, .line-2, .line-3 {
@@ -161,6 +159,8 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
 #hero.hero-black #hero-links i, #hero.hero-black #hero-bottom i, #hero.hero-black h3 { color: rgba(0, 0, 0, 0.8); }
 #hero h3 { color: rgba(255, 255, 255, 0.8); line-height: 0.5; }
 #hero-button { margin-top: 1rem; position: absolute; left: 50%; transform: translateX(-50%); width: 170px; }
+#hero-links:hover i { transition: .2s ease-in-out; color: rgba(255, 255, 255, 0.4); }
+#hero-links i:hover { color: rgba(255, 255, 255, 1); }
 
 #hero-bottom {
     position: absolute;
@@ -191,28 +191,21 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
     transition: .2s ease-in-out;
 }
 
-#hero-links:hover i {
-    transition: .2s ease-in-out;
-    color: rgba(255, 255, 255, 0.4);
-}
-
-#hero-links i:hover {
-    color: rgba(255, 255, 255, 1);
-}
-
 /*
  * ABOUT
  */
 
-#about .btn {
-    width: 250px;
-}
+#about .btn { width: 250px; }
 
 /*
  * PROJECTS
  */
 
 #projects .sub-title, #projects .row { margin-bottom: 5rem; }
+#projects .card-text { margin: 1rem; font-family: "Helvetica", "Roboto","Arial", sans-serif; }
+#projects .card-img-top { border-radius: 0; height: 60%; }
+#projects .card-link-icon { font-size: 40px; color: rgba(0, 0, 0, 0.7); transition: 0.2s ease-in-out; }
+#projects .card-link-icon:hover { color: rgba(0, 0, 0, 0.9); }
 
 #projects .card {
     color: rgba(0, 0, 0, 0.9);
@@ -235,23 +228,11 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
     #projects .row { margin-bottom: 0; }
 }
 
-#projects .card-img-top {
-    border-radius: 0;
-    height: 60%;
-}
-
 #projects .card-title {
-    align-self: center;
-    justify-self: center;
-    height: 100%;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    color: #000;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-#projects .card-text {
-    margin: 1rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 #projects .card-links {
@@ -261,20 +242,15 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 {
     transform: translateX(-50%);
 }
 
-#projects .card-link-icon { font-size: 40px; color: rgba(0, 0, 0, 0.7); transition: 0.2s ease-in-out; }
-#projects .card-link-icon:hover { color: rgba(0, 0, 0, 0.9); }
-
 /*
  * CONTACT ME
  */
 
-textarea {
-	resize: none;
-}
-
-#contact input, #contact textarea {
-    background-color: #F2EFEA
-}
+textarea { resize: none; }
+#contact input, #contact textarea { background-color: #F2EFEA }
+.form-control:focus { box-shadow: none; border-color: #5e9bfc; }
+.js-hide-label { opacity: 0; }
+.js-unhighlight-label { color: #999; }
 
 .form-label {
 	font-size: 12px;
@@ -292,19 +268,6 @@ textarea {
    	border-width: 0 0 1px 0;
    	border-style: none none solid none;
    	box-shadow: none;
-}
-
-.form-control:focus {
-	box-shadow: none;
-	border-color: #5e9bfc;
-}
-
-.js-hide-label {
-	opacity: 0;
-}
-
-.js-unhighlight-label {
-	color: #999
 }
 
 #contact .btn {
