@@ -236,21 +236,16 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { backgro
 textarea { resize: none; }
 #contact input, #contact textarea { background-color: #F2EFEA; }
 .form-control:focus { box-shadow: none; border-color: #5e9bfc; }
-.js-hide-label { opacity: 0; }
-.js-unhighlight-label { color: #999; }
-
-#contact {
-    border: 1rem solid transparent;
-}
+#contact { border: 1rem solid transparent; }
 
 .form-label {
 	font-size: 12px;
 	color: #5e9bfc;
-    text-align: left;
 	margin: 0;
 	display: block;
 	opacity: 1;
-	transition: .3s ease top, .3s ease opacity;
+    text-align: left;
+	transition: .4s ease top, .4s ease opacity;
 }
 
 .form-control {
@@ -260,6 +255,9 @@ textarea { resize: none; }
    	border-style: none none solid none;
    	box-shadow: none;
 }
+
+.js-hide-label { opacity: 0; }
+.js-unhighlight-label { color: #999; }
 
 #contact .btn {
     font-size: 1rem;

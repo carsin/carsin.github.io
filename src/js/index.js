@@ -99,6 +99,10 @@ $(window).scroll(() => {
 
 // Contact form hacks
 $(document).ready(function() {
+    $(".navbar-brand").click(() => {
+        location.reload();
+    });
+
 	// Test for placeholder support
     $.support.placeholder = (function(){
         var i = document.createElement('input');
