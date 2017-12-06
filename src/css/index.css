@@ -95,16 +95,15 @@ html, body {
 
 /* Nav hamburger anim */
 .navbar-toggler { border: 0; }
-.line-2 { transition-delay: 0.05s; }
-.line-3 { transition-delay: 0.1s; margin-bottom: 0 !important; }
+.line-3 { margin-bottom: 0 !important; }
 nav.active .line-1 { width: 0; }
-nav.active .line-2 { transition-delay: 0.05s; width: 0; }
-nav.active .line-3 { transition-delay: 0.1s; width: 0; }
+nav.active .line-2 { width: 0; }
+nav.active .line-3 { width: 0; }
 .cross-container { transform: translateY(-1.5vh); }
 .cross { transform: translate(-50%, -50%) rotate(45deg); }
 .cross:after { content: ""; transform: translate(-50%, -50%) rotate(90deg); }
-nav.active .cross { width: 40px; transition-delay: 0.3s; }
-nav.active .cross:after { width: 40px; transition-delay: .4s; }
+nav.active .cross { width: 40px; transition-delay: .3s; }
+nav.active .cross:after { width: 40px; transition-delay: .3s; }
 nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { background: white; }
 .hamburger {
     display: inline-block;
@@ -121,7 +120,7 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { backgro
     background: black;
     top: 0;
     margin-bottom: 10px;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out !important;
     border: none;
     margin-left: auto;
     margin-right: auto;
@@ -132,7 +131,7 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { backgro
     width: 0;
     height: 2px;
     background: rgb(192, 57, 43);
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out !important;
 }
 
 /*
