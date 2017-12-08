@@ -10,7 +10,16 @@ body { transition: .4s ease-in-out; }
 .no-margin { margin: 0; }
 .disabled { text-decoration: line-through; cursor: not-allowed; }
 .background-color-adapt { transition: .4s ease-in-out; }
-.background-image { height: 106vh; width: 100vw; position: fixed; z-index: -1; object-fit: cover; transition: .4s ease-in-out; top: -6vh; filter: brightness(0.45); }
+.background-image { 
+	height: 106vh; 
+	width: 100vw; 
+	position: fixed; 
+	z-index: -1; 
+	object-fit: cover; 
+	transition: .4s ease-in-out; 
+	top: -6vh; 
+	filter: brightness(0.45); 
+}
 
 html, body {
     font-family: "Helvetica", "Roboto", "Arial", sans-serif;
