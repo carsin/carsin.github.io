@@ -54,6 +54,7 @@ html, body {
 
 .title {
 	font-weight: bold;
+    font-family: "Work Sans", sans-serif;
 	color: #000;
 	text-transform: uppercase;
 }
@@ -89,45 +90,6 @@ html, body {
     transition: .4s ease-in-out;
     margin: 0 1rem;
     color: #000;
-    position: relative;
-    display: block;
-    cursor: pointer;
-}
-
-.nav-item:before, .nav-item:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 1px;
-    top: 50%;
-    margin-top: -0.5px;
-    background: #000;
-}
-
-.nav-item:before {
-    left: -1%;
-}
-
-.nav-item:after {
-    right: 1%;
-    background: #000;
-    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.nav-item:hover {
-    color: #000;
-}
-
-.nav-item:hover:before {
-    background: #000;
-    width: 102%;
-    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.nav-item:hover:after {
-    background: transparent;
-    width: 102%;
-    transition: 0s;
 }
 
 /*
@@ -290,4 +252,47 @@ textarea { resize: none; }
 	width: 150%;
 	z-index: -1;
     transition: all .4s cubic-bezier(.83,.19,.31,.97) 0s;
+}
+
+/* Strikethrough on hover */
+.strikethrough {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.strikethrough:before, .strikethrough:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #000;
+}
+
+.strikethrough:before {
+    left: -1%;
+}
+
+.strikethrough:after {
+    right: 1%;
+    background: #000;
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough:hover {
+    color: #000;
+}
+
+.strikethrough:hover:before {
+    background: #000;
+    width: 102%;
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough:hover:after {
+    background: transparent;
+    width: 102%;
+    transition: 0s;
 }
