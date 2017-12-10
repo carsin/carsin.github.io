@@ -1,64 +1,9 @@
-var prevImg;
-var isImg = true;
-var heroViewing = true;
-
 inView(".title-scrollspy").on("enter", (el) => {
     setActive(el);
 });
 
-inView(".title-image").on("enter", (el) => {
-    $("#nav-main").toggleClass("over-image");
-    $("#nav-main").css("background", "rgba(0, 0, 0, 0)");
-    prevImg = $("body").find($("#" + $(el).attr("data-bgid")));
-    prevImg.css("opacity", "100")
-    isImg = true;
-});
-
 inView(".title-color").on("enter", (el) => {
     setColors(el);
-    if (heroViewing) {
-        $("#hero").toggleClass("hero-black")
-        $("#hero-button").toggleClass("btn-inverted");
-        heroViewing = false;
-    }
-
-    if (isImg) {
-        $("#nav-main").toggleClass("over-image");
-        $("#navbar-img1").fadeOut(150, () => {
-            $("#navbar-img2").fadeIn(150);
-        });
-        isImg = false;
-    }
-
-    prevImg.css("opacity", "0");
-});
-
-inView("#hero-title").on("enter", (el) => {
-    if (!heroViewing) {
-        $("#hero").toggleClass("hero-black")
-        $("#hero-button").toggleClass("btn-inverted");
-        $("#navbar-img2").fadeOut(150, () => {
-            $("#navbar-img1").fadeIn(150);
-        });
-    }
-
-    heroViewing = true;
-});
-
-$(".navbar-toggler").click(() => {
-    $(".navbar-toggler").toggleClass("is-active");
-    $(".navbar").toggleClass("active");
-    setTimeout(() => {
-        if ($(".navbar-toggler").hasClass("collapsed")) {
-            $("#nav-main").css("background", "rgba(0, 0, 0, 0)");
-        } else {
-            // Set nav color to background
-            // $("#nav-main").css("background", $("body").css("background-color"));
-
-            // Set nav color to black on toggle
-            $("#nav-main").css("background", "black");
-        }
-    }, 1);
 });
 
 function setColors(el) {

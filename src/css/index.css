@@ -3,7 +3,6 @@
  */
 
 body { transition: .4s ease-in-out; }
-.info { font-size: 25px; }
 .hidden { visibility: hidden; }
 .feature-container { min-height: 100vh; margin: 10vh 0;}
 .noscroll { overflow: hidden; }
@@ -24,7 +23,7 @@ body { transition: .4s ease-in-out; }
 html, body {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 2rem;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -87,9 +86,49 @@ html, body {
 .nav-item {
     font-size: 18px;
     line-height: 18px;
+    text-decoration: none;
     transition: .4s ease-in-out;
     margin: 0 1rem;
     color: #000;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-item:before, .nav-item:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #000;
+}
+
+.nav-item:before {
+  left: -2.5px;
+}
+
+.nav-item:after {
+  right: 2.5px;
+  background: #000;
+  transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-item:hover {
+    color: #000;
+}
+
+.nav-item:hover:before {
+  background: #000;
+  width: 100%;
+  transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-item:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
 }
 
 /*
