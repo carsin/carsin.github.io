@@ -44,7 +44,8 @@ $(window).scroll(() => {
 
 // Contact form hacks
 $(document).ready(function() {
-    $(".navbar-brand").click(() => {
+    $(".navbar-brand").click((e) => {
         location.reload();
+        e.preventDefault();
     });
 });
