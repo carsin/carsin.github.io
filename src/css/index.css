@@ -10,15 +10,15 @@ body { transition: .4s ease-in-out; }
 .no-margin { margin: 0; }
 .disabled { text-decoration: line-through; cursor: not-allowed; }
 .background-color-adapt { transition: .4s ease-in-out; }
-.background-image { 
-	height: 106vh; 
-	width: 100vw; 
-	position: fixed; 
-	z-index: -1; 
-	object-fit: cover; 
-	transition: .4s ease-in-out; 
-	top: -6vh; 
-	filter: brightness(0.45); 
+.background-image {
+	height: 106vh;
+	width: 100vw;
+	position: fixed;
+	z-index: -1;
+	object-fit: cover;
+	transition: .4s ease-in-out;
+	top: -6vh;
+	filter: brightness(0.45);
 }
 
 html, body {
@@ -153,13 +153,9 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { backgro
 #hero * { transition: .4s ease-in-out; }
 #hero { background-color: transparent; height: 100%; }
 #hero-text { margin-top: -6%; }
-#hero h1 { color: rgba(255, 255, 255, 0.9); }
-#hero.hero-black h1 { color: rgba(0, 0, 0, 0.9); }
-#hero.hero-black #hero-links i, #hero.hero-black #hero-bottom i, #hero.hero-black h3 { color: rgba(0, 0, 0, 0.8); }
-#hero h3 { color: rgba(255, 255, 255, 0.8); line-height: 1; }
 #hero-button { margin-top: 1rem; position: absolute; left: 50%; transform: translateX(-50%); width: 170px; }
-#hero-links:hover i { transition: .2s ease-in-out; color: rgba(255, 255, 255, 0.4); }
-#hero-links i:hover { color: rgba(255, 255, 255, 1); }
+#hero-links:hover i { transition: .2s ease-in-out; color: rgba(0, 0, 0, 0.4); }
+#hero-links i:hover { color: #000; }
 
 #hero-bottom {
     position: absolute;
@@ -186,7 +182,7 @@ nav.over-image .line-1, nav.over-image .line-2, nav.over-image .line-3 { backgro
     line-height: 1;
     padding: 0 0.7rem;
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     transition: .2s ease-in-out;
 }
 
