@@ -41,8 +41,6 @@ $(window).scroll(() => {
     if (st <= limit) $("#hero-bottom").css("opacity", (1 - st/limit));
 });
 
-
-// Contact form hacks
 $(document).ready(function() {
     $(".navbar-brand").click((e) => {
         location.reload();
