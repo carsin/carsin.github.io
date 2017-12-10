@@ -102,42 +102,4 @@ $(document).ready(function() {
     $(".navbar-brand").click(() => {
         location.reload();
     });
-
-	// Test for placeholder support
-    $.support.placeholder = (function(){
-        var i = document.createElement('input');
-        return 'placeholder' in i;
-    })();
-
-    // Hide labels by default if placeholders are supported
-    if($.support.placeholder) {
-        $('.form-label').each(function(){
-            $(this).addClass('js-hide-label');
-        });
-
-        // Code for adding/removing classes here
-        $('.form-group').find('input, textarea').on('keyup blur focus', function(e){
-
-            // Cache our selectors
-            let element = $(this);
-            let parent = element.parent().find("label");
-            if (e.type == 'keyup') {
-                if (element.val() == '') {
-                    parent.addClass('js-hide-label');
-                } else {
-                    parent.removeClass('js-hide-label');
-                }
-            } else if (e.type == 'blur') {
-                if (element.val() == '') {
-                    parent.addClass('js-hide-label');
-                } else {
-                    parent.removeClass('js-hide-label').addClass('js-unhighlight-label');
-                }
-            } else if (e.type == 'focus') {
-                if (element.val() !== '') {
-                    parent.removeClass('js-unhighlight-label');
-                }
-            }
-        });
-    }
 });
