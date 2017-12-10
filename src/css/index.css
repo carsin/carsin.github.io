@@ -189,18 +189,8 @@ html, body {
 
 textarea { resize: none; }
 #contact input, #contact textarea { background-color: #F2EFEA; }
-.form-control:focus { box-shadow: none; border-color: #5e9bfc; }
+.form-control:focus { box-shadow: none; border-color: #ff3a3a; }
 #contact { border: 1rem solid transparent; }
-
-.form-label {
-	font-size: 12px;
-	color: #5e9bfc;
-	margin: 0;
-	display: block;
-	opacity: 1;
-    text-align: left;
-	transition: .4s ease top, .4s ease opacity;
-}
 
 .form-control {
 	border-radius: 0;
@@ -209,9 +199,6 @@ textarea { resize: none; }
    	border-style: none none solid none;
    	box-shadow: none;
 }
-
-.js-hide-label { opacity: 0; }
-.js-unhighlight-label { color: #999; }
 
 #contact .btn {
     font-size: 1rem;
