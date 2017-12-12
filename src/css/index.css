@@ -7,6 +7,7 @@ body { transition: .4s ease-in-out; }
 .feature-container { min-height: 100vh; margin: 10vh 0;}
 .noscroll { overflow: hidden; }
 .no-margin { margin: 0; }
+.info { font-size: 2rem; }
 .disabled { text-decoration: line-through; cursor: not-allowed; }
 .background-color-adapt { transition: .4s ease-in-out; }
 .background-image {
