@@ -38,32 +38,5 @@
 #hero-links i:hover { color: #fff; }
 
 #main-bg #borders * {
-    position: fixed;
-    background-color: white;
-}
-
-#borders #top {
-    top: 0;
-    height: 60px;
-    width: 100vw;
-}
-
-#borders #right {
-    width: 60px;
-    top: 0;
-    right: 0;
-    height: 100vh;
-}
-
-#borders #left {
-    width: 60px;
-    top: 0;
-    left: 0;
-    height: 100vh;
-}
-
-#borders #bottom {
-    bottom: 0;
-    height: 60px;
-    width: 100vw;
+    background-color: gray;
 }
