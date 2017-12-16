@@ -66,10 +66,10 @@ html, body {
 
 #nav-main {
     padding-left: 0;
+    height: 60px;
     padding-right: 0;
     color: rgba(0, 0, 0, 0.9);
-    background-color: white;
-    margin: 0 58px;
+    margin: 0 60px;
 }
 
 .navbar-brand {
@@ -97,6 +97,41 @@ html, body {
 
 #nav-items:hover a {
     color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * COLORS
+ */
+
+#main-bg #borders * {
+    position: fixed;
+    background-color: white;
+}
+
+#borders #top {
+    top: 0;
+    height: 60px;
+    width: 100vw;
+}
+
+#borders #right {
+    width: 60px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+}
+
+#borders #left {
+    width: 60px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+
+#borders #bottom {
+    bottom: 0;
+    height: 60px;
+    width: 100vw;
 }
 
 /*
@@ -188,3 +223,5 @@ html, body {
     width: 102%;
     transition: 0s;
 }
+
+
