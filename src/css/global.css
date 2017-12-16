@@ -1,0 +1,211 @@
+/*
+ * GLOBAL
+ */
+
+body { transition: .4s ease-in-out; }
+.hidden { visibility: hidden; }
+.noscroll { overflow: hidden; }
+.no-margin { margin: 0; }
+.disabled { text-decoration: line-through; cursor: not-allowed; }
+.background-color-adapt { transition: .4s ease-in-out; }
+.background-image {
+	height: 106vh;
+	width: 100vw;
+	position: fixed;
+	z-index: -1;
+	object-fit: cover;
+	transition: .4s ease-in-out;
+	top: -6vh;
+	filter: brightness(0.45);
+}
+
+html, body {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .8);
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.feature-container { margin: 0 0 5% 0; }
+.title {
+	font-weight: bold;
+    font-family: "Work Sans", sans-serif;
+	color: #000;
+	text-transform: uppercase;
+}
+
+.sub-title {
+    color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+/*
+ * NAV
+ */
+
+#nav-main {
+    padding-left: 0;
+    height: 50px;
+    padding-right: 0;
+    color: rgba(0, 0, 0, 0.9);
+    margin: 0 15px;
+}
+
+.navbar-brand {
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 24px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 18px;
+    transition: .4s ease-in-out;
+    margin: 0 0 0 2rem;
+}
+
+.nav-item:hover, .navbar-brand:hover {
+    color: black !important;
+}
+
+#nav-items:hover a {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * BORDERS
+ */
+
+#main-bg #borders * { position: fixed; z-index: 1; background-color: white; }
+#borders #top { top: 0; height: 50px; width: 100vw; }
+#borders #right { width: 15px; top: 0; right: 0; height: 100vh; }
+#borders #left { width: 15px; top: 0; left: 0; height: 100vh; }
+#borders #bottom { bottom: 0; height: 50px; width: 100vw; }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 768px) {
+    #nav-main { height: 60px; margin: 0 60px; }
+    #borders #top { height: 60px; }
+    #borders #bottom { height: 60px; }
+    #borders #right { width: 45px; }
+    #borders #left { width: 45px; }
+}
+
+/*
+ * ANIMATIONS
+ */
+
+/* Bob element up and down */
+@keyframes bobUpDown {
+    0% { bottom: 7%; }
+    50% { bottom: 9%; }
+    100% { bottom: 7%; }
+}
+
+/* Sexy button animation */
+.animated-button:hover { color: #FFF; }
+.animated-button:hover:after { height: 450%; }
+.animated-button { border: 1px solid rgba(0, 0, 0, 0.8); }
+.animated-button:after { background: rgba(0, 0, 0, 0.95); transform: translateX(-50%) translateY(-50%) rotate(25deg); }
+.btn-inverted { color: rgba(255, 255, 255, 0.8) !important; border: 1px solid white !important; }
+.btn-inverted:after { background-color: white !important; }
+.btn-inverted:hover { color: black !important; }
+.animated-button {
+	position: relative;
+	display: block;
+    float: left;
+    clear: left;
+    background: transparent;
+	padding: 10px 20px;
+	color: rgba(0, 0, 0, 0.9);
+    font-family: "Roboto", san-serif;
+	font-size: 20px;
+	text-align: center;
+    font-weight: 100;
+    border-radius: 0;
+	overflow: hidden;
+    transition: all .4s cubic-bezier(.83,.19,.31,.97);
+}
+
+.animated-button:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+    transition: all .4s cubic-bezier(.83,.19,.31,.97) 0s;
+}
+
+/* Strikethrough on hover */
+.strikethrough {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.strikethrough:before, .strikethrough:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #000;
+}
+
+.strikethrough:before {
+    left: -1%;
+}
+
+.strikethrough:after {
+    right: 1%;
+    background: #000;
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough:hover {
+    color: #000;
+}
+
+.strikethrough:hover:before {
+    background: #000;
+    width: 102%;
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough:hover:after {
+    background: transparent;
+    width: 102%;
+    transition: 0s;
+}
+
+
