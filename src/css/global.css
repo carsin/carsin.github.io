@@ -4,7 +4,6 @@
 
 body { transition: .4s ease-in-out; }
 .hidden { visibility: hidden; }
-.feature-container { min-height: 100vh; margin: 10vh 0;}
 .noscroll { overflow: hidden; }
 .no-margin { margin: 0; }
 .disabled { text-decoration: line-through; cursor: not-allowed; }
@@ -66,14 +65,17 @@ html, body {
  */
 
 #nav-main {
-    transition: .4s ease-in-out;
-    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: white;
+    margin: 0 58px;
 }
 
 .navbar-brand {
     transition: 0.4s ease-in-out;
-    color: rgba(0, 0, 0, 1);
     font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
     font-size: 24px;
 }
 
@@ -83,13 +85,13 @@ html, body {
 
 .nav-item {
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.9);
     line-height: 18px;
     transition: .4s ease-in-out;
-    margin: 0 1rem;
-    color: rgba(0, 0, 0, 0.8);
+    margin: 0 0 0 2rem;
 }
 
-.nav-item:hover {
+.nav-item:hover, .navbar-brand:hover {
     color: black !important;
 }
 
