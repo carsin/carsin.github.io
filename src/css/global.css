@@ -20,7 +20,7 @@ body { transition: .4s ease-in-out; }
 }
 
 html, body {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1rem;
     line-height: 2rem;
     height: 100%;
@@ -48,17 +48,6 @@ html, body {
 }
 
 .feature-container { margin: 0 0 5% 0; }
-.title {
-	font-weight: bold;
-    font-family: "Work Sans", sans-serif;
-	color: #000;
-	text-transform: uppercase;
-}
-
-.sub-title {
-    color: rgba(0, 0, 0, 0.8);
-	font-weight: bold;
-}
 
 /*
  * NAV
@@ -207,5 +196,3 @@ html, body {
     width: 102%;
     transition: 0s;
 }
-
-
