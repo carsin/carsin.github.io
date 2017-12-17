@@ -111,7 +111,7 @@ html, body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 768px) {
-    #nav-main { height: 60px; margin: 0 60px; }
+    #nav-main { height: 60px; margin: 0 45px; }
     #borders #top { height: 60px; }
     #borders #bottom { height: 60px; }
     #borders #right { width: 45px; }
