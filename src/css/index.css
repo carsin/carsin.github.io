@@ -1,12 +1,12 @@
-/*
- * HERO
- */
-
 #hero {
     padding: 50px 15px;
     height: 100%;
     width: 100%;
-    color: #050608;
+    background: #111;
+}
+
+#hero h1, #hero a, #hero h5 {
+    color: #fff;
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -14,26 +14,26 @@
     #hero { padding: 70px 60px;}
 }
 
-#hero h1, #hero h5 {
-    font-weight: bold;
-    letter-spacing: -1px;
+#social-links {
+    list-style: none;
 }
 
-#hero-links {
+#social-links a {
+    color: #fff;
+    padding: 4px;
+    letter-spacing: normal;
+    transition: background-color 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    line-height: 1rem;
     display: inline-block;
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
-#hero-links i {
-    line-height: 1;
-    font-size: 3rem;
-    color: #111;
-    transition: .2s ease-in-out;
-}
-
-#hero-links i:hover {
-    color: black;
+#social-links a:hover {
+    text-decoration: none;
+    background-color: #bc2929;
 }
 
 #main-bg #borders * {
-    background-color: #050608;
+    background-color: #111;
 }

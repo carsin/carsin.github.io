@@ -10,7 +10,7 @@ body { transition: .4s ease-in-out; }
 .background-color-adapt { transition: .4s ease-in-out; }
 
 html, body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     height: 100%;
     width: 100%;
@@ -62,7 +62,6 @@ html, body {
 
 .nav-item {
     font-size: 18px;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
     color: white;
     line-height: 18px;
     transition: .4s ease-in-out;
