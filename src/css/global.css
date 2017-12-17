@@ -8,21 +8,10 @@ body { transition: .4s ease-in-out; }
 .no-margin { margin: 0; }
 .disabled { text-decoration: line-through; cursor: not-allowed; }
 .background-color-adapt { transition: .4s ease-in-out; }
-.background-image {
-	height: 106vh;
-	width: 100vw;
-	position: fixed;
-	z-index: -1;
-	object-fit: cover;
-	transition: .4s ease-in-out;
-	top: -6vh;
-	filter: brightness(0.45);
-}
 
 html, body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1rem;
-    line-height: 2rem;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -57,14 +46,14 @@ html, body {
     padding-left: 0;
     height: 50px;
     padding-right: 0;
-    color: rgba(0, 0, 0, 0.9);
+#050608
     margin: 0 15px;
 }
 
 .navbar-brand {
+    color: white;
     transition: 0.4s ease-in-out;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.9);
     font-size: 24px;
 }
 
@@ -74,25 +63,22 @@ html, body {
 
 .nav-item {
     font-size: 18px;
-    color: rgba(0, 0, 0, 0.9);
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: white;
     line-height: 18px;
     transition: .4s ease-in-out;
     margin: 0 0 0 2rem;
 }
 
 .nav-item:hover, .navbar-brand:hover {
-    color: black !important;
-}
-
-#nav-items:hover a {
-    color: rgba(0, 0, 0, 0.5);
+    color: white !important;
 }
 
 /*
  * BORDERS
  */
 
-#main-bg #borders * { position: fixed; z-index: 1; background-color: white; }
+#main-bg #borders * { position: fixed; z-index: 1; }
 #borders #top { top: 0; height: 50px; width: 100vw; }
 #borders #right { width: 15px; top: 0; right: 0; height: 100vh; }
 #borders #left { width: 15px; top: 0; left: 0; height: 100vh; }
@@ -192,6 +178,49 @@ html, body {
 }
 
 .strikethrough:hover:after {
+    background: transparent;
+    width: 102%;
+    transition: 0s;
+}
+
+/* White strikethrough */
+.strikethrough-white {
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.strikethrough-white:before, .strikethrough-white:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #fff;
+}
+
+.strikethrough-white:before {
+    left: -1%;
+}
+
+.strikethrough-white:after {
+    right: 1%;
+    background: #fff;
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough-white:hover {
+    color: #fff;
+}
+
+.strikethrough-white:hover:before {
+    background: #fff;
+    width: 102%;
+    transition: width 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough-white:hover:after {
     background: transparent;
     width: 102%;
     transition: 0s;
