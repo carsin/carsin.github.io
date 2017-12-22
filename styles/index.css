@@ -19,8 +19,8 @@ html, body {
     height: 100%;
     width: 100%;
     transition: background-image 5s linear;
-    background: linear-gradient(to left top, #000 50%, #fff 50%);
-    animation: 1s cubic-bezier(.57,.52,.24,1) 0s 1 gradient-load;
+    /*background: linear-gradient(to left top, #000 50%, #fff 50%);*/
+    /*animation: 1s cubic-bezier(.57,.52,.24,1) 0s 1 gradient-load;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,16 +32,16 @@ html, body {
     width: 35vw;
     display: block;
     transform: translateX(-10vw);
-    animation: 2s cubic-bezier(.57,.52,.24,1) 0.5s 1 image-enter forwards;
+    animation: 2s cubic-bezier(.57,.52,.24,1) 0s 1 image-enter forwards;
     opacity: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/708476/pexels-photo-708476.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-image: url("https://images.pexels.com/photos/708476/pexels-photo-708476.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
 #center-name {
-    color: #fff;
+    color: #000;
     position: absolute;
     top: 50%;
     left: 50%;
