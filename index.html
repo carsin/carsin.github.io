@@ -15,6 +15,8 @@
     <meta property="og:description" content="Web development portfolio of Carson Freedman.">
     <title>carson freedman</title>
     <!--<link rel="shortcut icon" type="image/png" href="src/img/logos/logo-black.png"/>-->
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93097801-5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,17 +25,21 @@
 
         gtag('config', 'UA-93097801-5');
     </script>
-    <link rel="stylesheet" href="styles/index.css">
+    <script>
+        $(document).ready(() => {
+            $(document).scrollTop(0);
+            $(window).on("load", () => { $("body").removeClass("preload"); });
+
+        });
+    </script>
 </head>
 <body>
-    <div id="main">
-
+    <div id="main-view">
+        <div id="content">
+            <div id="center-image"></div>
+            <h1 id="center-name">Carson Freedman</h1>
+        </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-        $(document).scrollTop(0);
-        $(window).on("load", () => { $("body").removeClass("preload"); });
-    </script>
-</body>
+    </body>
 </html>
