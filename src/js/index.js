@@ -9,6 +9,7 @@ inView(".title-color").on("enter", (el) => {
 function setColors(el) {
     var color = $(el).attr("data-background");
     $("body").css("background", color);
+    $("#nav-main").css("background", color);
     $(".background-color-adapt").css("background", color);
 }
 

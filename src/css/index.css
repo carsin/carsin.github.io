@@ -69,7 +69,6 @@ html, body {
 
 #nav-main {
     transition: .4s ease-in-out;
-    background-color: transparent;
 }
 
 .navbar-brand {
