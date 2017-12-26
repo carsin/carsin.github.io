@@ -137,6 +137,9 @@ html, body {
  */
 
 #about .btn { width: 250px; }
+#about {
+    margin-bottom: 10%;
+}
 
 /*
  * PROJECTS
