@@ -15,7 +15,7 @@
     <meta property="og:description" content="Web development portfolio of Carson Freedman.">
     <title>Home of Carson Freedman</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-93097801-5"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-93097801-5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -23,16 +23,24 @@
 
         gtag('config', 'UA-93097801-5');
     </script>
-    <!-- FONTS -->
+    <!-- LIBS/FONTS -->
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body class="preload">
-	<h1>test</h1>
+	<div id="particles"></div>
+	<div id="view-main">
+		<h1>"CARSON FREEDMAN"</h1>
+		<h1>"WEBSITE"</h1>
+	</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $(document).scrollTop(0);
-        $(window).on("load", () => { $("body").removeClass("preload"); });
+        $(window).on("load", () => { 
+			$("body").removeClass("preload"); 
+			particlesJS.load("particles", "/src/cfg/particles.json");
+		});
     </script>
     <script src="src/js/index.js"></script>
 </body>
